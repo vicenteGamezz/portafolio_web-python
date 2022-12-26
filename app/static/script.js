@@ -1,25 +1,3 @@
-window.sr = ScrollReveal();
-
-    sr.reveal('.navbar', {
-        duration: 3000,
-        origin: 'bottom',
-        distance: '-100px'
-    })
-    
-    sr.reveal('.scroll-baner', {
-        duration: 3000,
-        origin: 'left',
-        distance: '-100px'
-    }) 
-
-    sr.reveal('.scroll-img', {
-        duration: 3000,
-        origin: 'left',
-        distance: '-100px'
-    }) 
-
-    
-
 const container = document.querySelector(".container");
 const projects = document.querySelectorAll('.project');
 const projectHideBtn = document.querySelector(".project-hide-btn"); 

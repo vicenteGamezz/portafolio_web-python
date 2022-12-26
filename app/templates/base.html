@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../static/logo_black.png">
+    <script src="{{ url_for('static',filename='animations.js') }}"></script>
 </head>
 <body>
     <header class="navbar">
@@ -28,30 +29,43 @@
         </nav>
     </header>
     <section>{% block content %}{% endblock %}</section>
-    <div class="footer">
-        <div class="center full-width">
-            <div class="row">
-                <h3>Contactame</h3>
-            </div>
+</body>
+<footer class="footer">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="{{ url_for('static', filename='logo_black.png') }}" alt="logo de Vicente Gamez">
+                </a>
+            </figure>
         </div>
-        <div class="center full-width">
-            <div class="row">
-                <p>O tambien puedes seguirme en mis redes sociales.</p>
-            </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quam.</p>
         </div>
-        <div class="center full-width social-links">
-            <div class="row">
-                <a target="_blank" href="https://twitter.com/VicenteGamez9"><img src="{{ url_for('static', filename='twitter.png') }}" alt="" class="social" width="30"></a>
-                <a target="_blank" href="https://github.com/vicenteGamezz"><img src="{{ url_for('static', filename='github.png') }}" alt="" class="social" width="30"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/vicente-g%C3%A1mez-7a008922a/"><img src="{{ url_for('static', filename='linkedin.png') }}" alt="" class="social btn" width="30"></a>
-            </div>
-        </div>
-        <div class="made-by">
-            <div class="row">
-                <p>Coded by <em>Vicente Gamez</em></p>
+        <div class="box">
+            <h2>ENCUENTRAME EN REDES</h2>
+            <div class="social-links">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='twitter.png') }}" alt="" class="social btn" width="30">
+                </a>
+                <a href="#">
+                    <img src="{{ url_for('static', filename='github.png') }}" alt="" class="social btn" width="30">
+                </a>
+                <a href="">
+                    <img src="{{ url_for('static', filename='linkedin.png') }}" alt="" class="social btn" width="30">
+                </a>
+                <a href="">
+                    <img src="{{ url_for('static', filename='facebook.png') }}" alt="" class="social btn" width="30">
+                </a>
             </div>
         </div>
     </div>
-    <script src="{{ url_for('static',filename='script.js') }}"></script>
-</body>
+    <div class="grupo-2">
+        <small>&copy; 2022 <b>Vicente Gamez</b> - Todos los derechos reservados.</small>
+    </div>
+</footer>
+<script src="{{ url_for('static',filename='script.js') }}"></script>
+<script src="{{ url_for('static',filename='animations.js') }}"></script>
 </html>
